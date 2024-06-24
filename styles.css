@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 300px;
+}
+
+.display {
+    grid-column: span 4;
+    background: #0e0c0c;
+    color: #f2f0ef;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5em;
+    background: hsl(27, 94%, 70%);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #bbb;
+}
